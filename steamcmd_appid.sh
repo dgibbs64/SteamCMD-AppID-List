@@ -8,7 +8,7 @@
 rootdir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 
 echo "Creating steamcmd_appid.json"
-curl https://api.steampowered.com/ISteamApps/GetAppList/v2/ | jq -r '.' > steamcmd_appid.json
+curl https://api.steampowered.com/ISteamApps/GetAppList/v2/ | jq -r '.applist.apps|=sort_by(.appid)' > steamcmd_appid.json
 echo "Creating steamcmd_appid.xml"
 curl https://api.steampowered.com/ISteamApps/GetAppList/v2/?format=xml > steamcmd_appid.xml
 echo "Creating steamcmd_appid.csv"
