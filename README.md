@@ -27,5 +27,5 @@ You can get the output without using the script.
 
 Simply download the script and run it.
 ```
-wget https://raw.githubusercontent.com/dgibbs64/SteamCMD-AppID-List/master/steamcmd_appid.sh;chmod +x steamcmd_appid.sh;./steamcmd_appid.sh
+wget https://raw.githubusercontent.com/dgibbs64/SteamCMD-AppID-List/master/steamcmd_appid.sh; chmod +x steamcmd_appid.sh; ./steamcmd_appid.sh
 ```
