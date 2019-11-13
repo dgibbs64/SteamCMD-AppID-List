@@ -1,4 +1,3 @@
-
 # SteamCMD AppID List
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ac7ccc2fbea34846922b2c39a58456ef)](https://app.codacy.com/app/dgibbs64/SteamCMD-AppID-List?utm_source=github.com&utm_medium=referral&utm_content=dgibbs64/SteamCMD-AppID-List&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/dgibbs64/SteamCMD-AppID-List.svg?branch=master)](https://travis-ci.org/dgibbs64/SteamCMD-AppID-List)
@@ -27,7 +26,6 @@ You can get the output without using the script.
 ## Usage
 
 Simply download the script and run it.
-
-	wget https://raw.githubusercontent.com/dgibbs64/SteamCMD-AppID-List/master/steamcmd_appid.sh;chmod +x steamcmd_appid.sh;./steamcmd_appid.sh
-
-
+```
+wget https://raw.githubusercontent.com/dgibbs64/SteamCMD-AppID-List/master/steamcmd_appid.sh;chmod +x steamcmd_appid.sh;./steamcmd_appid.sh
+```
