@@ -21,7 +21,7 @@ You can get the output without using the script.
 [steamcmd_appid.xml](https://github.com/dgibbs64/SteamCMD-AppID-List/blob/master/steamcmd_appid.xml)
 
 [steamcmd_appid.md](https://github.com/dgibbs64/SteamCMD-AppID-List/blob/master/steamcmd_appid.md)
-> Travis-CI checks daily for updates and posts them to this repo. So this list will always be up-to-date.
+> GitHub Actions checks daily for updates and posts them to this repo. So this list will always be up-to-date.
 
 ## Usage
 
