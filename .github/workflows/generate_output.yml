@@ -1,0 +1,37 @@
+---
+# This workflow generates the output and pushes it to main branch
+
+name: Generate Output
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+
+      - name: Install markdown-table-cli
+        run: npm install -g markdown-table-cli
+
+      - name: Run steamcmd_appid.sh
+        run: ./steamcmd_appid.sh
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
+      - name: Push to main branch
+        uses: Automattic/action-commit-to-branch@master
+        with:
+          branch: "main"
+          commit_message: "GitHub Actions build: ${{ steps.date.outputs.date }}"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
